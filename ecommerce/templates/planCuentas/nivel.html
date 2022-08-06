@@ -1,0 +1,73 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">Id</th>
+        <th scope="col" style="width: 30%;">Descripción</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>Nivel 1</td>
+      <td class="acciones">
+        <a href="{{ crear_url }}">✏️</a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> ❌ </a>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                Los datos se han eliminado correctamente
+                            </div>
+                            <div class="modal-footer">
+                                <a href="{{ listar_url }}" class="btn btn-success" data-bs-dismiss="modal">Aceptar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  </tr>
+    <tr>
+      <td>2</td>
+      <td>Nivel 2</td>
+      <td class="acciones">
+        <a href="{{ crear_url }}">✏️</a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> ❌ </a>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                Los datos se han eliminado correctamente
+                            </div>
+                            <div class="modal-footer">
+                                <a href="{{ listar_url }}" class="btn btn-success" data-bs-dismiss="modal">Aceptar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  </tr>
+    <tr>
+      <td>3</td>
+      <td>Nivel 3</td>
+    <td class="acciones">
+        <a href="{{ crear_url }}">✏️</a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> ❌ </a>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                Los datos se han eliminado correctamente
+                            </div>
+                            <div class="modal-footer">
+                                <a href="{{ listar_url }}" class="btn btn-success" data-bs-dismiss="modal">Aceptar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  </tr>
+{% endblock %}
